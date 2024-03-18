@@ -1,0 +1,26 @@
+.image-gallery {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .image-gallery.visible {
+    opacity: 1;
+  }
+  
+  .image-gallery img {
+    width: 100%;
+    max-width: 300px; /* Adjust size as needed */
+    margin-bottom: 20px; /* Adjust spacing as needed */
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
